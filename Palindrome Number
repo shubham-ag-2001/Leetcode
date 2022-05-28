@@ -1,0 +1,25 @@
+// Name : Shubham Agarwal
+// username : shubham_ag_2001
+
+// Q. Palindrome Number
+
+
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        string s= to_string(x);
+        int l = s.length();
+        int a=0;
+        if(s[0]=='-'){
+            return false;
+        }
+        else {
+            for(int i=0; i<l/2; i++){
+                    if(s[i]!=s[l-i-1]){
+                     return false;
+                    }
+            }
+            return true;
+            }
+        }
+};
