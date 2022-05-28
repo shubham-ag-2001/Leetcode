@@ -1,0 +1,15 @@
+// name : Shubham Agarwal
+// username : shubham_ag_2001
+// Q. Number of Steps to Reduce a Number to Zero
+
+
+class Solution {
+public:
+    int numberOfSteps(int num) {
+        int n=num;        
+        int i=0;
+        for(i; n!=0; i++){
+                if(n%2==0){ n=n/2; } 
+                else{ n=n-1; }
+            } return i; }
+};
